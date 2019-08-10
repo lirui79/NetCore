@@ -20,7 +20,7 @@
 class INetCallBack {
 public:
     virtual ~INetCallBack() {}
-    virtual int recv(unsigned int tag, unsigned char* data, int size) = 0;
+    virtual int recv(unsigned int tag, const unsigned char* data, int size) = 0;
 };
 
 class INetServer {
